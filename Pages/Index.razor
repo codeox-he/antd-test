@@ -1,0 +1,8 @@
+﻿@page "/"
+@inject NavigationManager _nav;
+<h1>Hello, world!</h1>
+<Button Type="@ButtonType.Link" OnClick="_ => { _nav.NavigateTo(_grid1_uri); }">两级列头的树表格</Button>
+
+@code{
+    private static readonly string _grid1_uri = "/tree1";
+}
